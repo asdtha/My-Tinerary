@@ -5,7 +5,7 @@ import CityCard from "./CityCard";
 function Home(){
     return (
         <>
-     {/*    <Navbar/> */}
+        <Navbar/> 
         <CityCard/> 
         </>
     )
