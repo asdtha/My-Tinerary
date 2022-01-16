@@ -4,7 +4,7 @@ import React from "react";
 function CityCard(){
     return (
     <div>
-        <div className="card" style={{width: "18rem", backgroundColor: "#F0FFFF"}}>
+        <div className="card" style={{width: "18rem", backgroundColor: "red"}}>
 {/*   <img src="..." class="card-img-top" alt="...">  */}
   <div className="card-body">
     <h5 className="card-title">Card title</h5>

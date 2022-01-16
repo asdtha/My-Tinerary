@@ -1,11 +1,26 @@
 import Home from './components/Home'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import CityCard from './components/CityCard'
+import Navbar from './components/Navbar';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import './App.css'
+
 
 function App() {
   return (
-    <div>
-      <Home/>
-    </div>
+    <>
+     <Navbar />
+    <Home />
+   
+    </>
+   /*  <BrowserRouter>
+    
+    <Routes>
+      <Route path="/" element={<Home />}  </>
+      <Route path="/cities" element={<CityCard />}  </>
+    
+    </Routes>
+    </BrowserRouter>
+     */
   );
 }
 
