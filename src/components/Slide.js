@@ -1,6 +1,6 @@
 import React from "react";
 import PicoBolivar from "../assets/picobolivar.jpg"
-import PicoBolivar2 from "../assets/picobolivar.jpg"
+import Ushuaia from "../assets/ushuaia.jpg"
 import PicoBolivar3 from "../assets/picobolivar.jpg"
 
 
@@ -16,13 +16,13 @@ function Slide () {
     </div>
     <div className="carousel-inner">
       <div className="carousel-item active">
-        <img src={PicoBolivar} className="d-block w-100" alt="..."/>
+        <img src={PicoBolivar} className="d-block w-100 slide" alt="..."/>
       </div>
       <div className="carousel-item">
-        <img src={PicoBolivar2} className="d-block w-100" alt="..."/>
+        <img src={Ushuaia} className="d-block w-100 slide " alt="..."/>
       </div>
       <div className="carousel-item">
-        <img src={PicoBolivar3} className="d-block w-100" alt="..."/>
+        <img src={PicoBolivar3} className="d-block w-100 slide" alt="..."/>
       </div>
     </div>
     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

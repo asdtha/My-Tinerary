@@ -4,3 +4,13 @@
     justify-content: center !important;  */
     
 }
+
+.slide {
+  height: auto !important;
+  width:90% !important;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 15%;
+  
+
+}
