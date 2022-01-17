@@ -1,13 +1,10 @@
 import React from "react";
+import {Link as Linkrouter } from 'react-router-dom'
 
 
 function Navbar(){
     return (
-       /*  <div className="navbar">
-            <button>Home</button>
-            <button>Cities</button>
-            <button>Users</button>
-        </div> */
+  
         <nav className="navbar navbar-expand-lg navbar-light bg-light city-navbar">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Navbar</a>
@@ -16,8 +13,8 @@ function Navbar(){
     </button>
     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div className="navbar-nav">
-        <a className="nav-link active" aria-current="page" href="#">Home</a>
-        <a className="nav-link" href="#">Cities</a>
+      <Linkrouter><a className="nav-link active" aria-current="page" to="/">Home</a></Linkrouter>
+      <Linkrouter><a className="nav-link" to="/cities">Cities</a></Linkrouter>
         <a className="nav-link" href="#">Users</a>
         
       </div>
