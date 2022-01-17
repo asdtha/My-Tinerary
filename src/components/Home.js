@@ -6,7 +6,7 @@ import '../App.css'
 function Home(){
     return (
        
-         <Navbar/>  
+       <h1>Estoy en home</h1>
        
     )
 }
