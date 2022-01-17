@@ -15,7 +15,7 @@ function Navbar(){
       <div className="navbar-nav">
       <Linkrouter className="nav-link active" aria-current="page" to="/">Home</Linkrouter>
       <Linkrouter className="nav-link" to="/cities">Cities</Linkrouter>
-        <a className="nav-link" href="#">Users</a>
+      <Linkrouter className="nav-link" to="/user">User</Linkrouter>
         
       </div>
     </div>

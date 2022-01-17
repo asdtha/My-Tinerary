@@ -14,6 +14,8 @@ function App() {
    
       <Route path="/" element={<Home />} />
       <Route path="/cities" element={<Cities />} />
+{/*       <Route path="/users" element={<User />} />
+ */}
     </Routes>
     </BrowserRouter>
      
