@@ -6,8 +6,7 @@ import Slide from "./Slide";
 function Home(){
     return (
        <>
-       <h1>Estoy en home</h1>
-       <Slide />
+             <Slide /> 
        </>
     )
 }
