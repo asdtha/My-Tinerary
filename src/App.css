@@ -1,16 +1,135 @@
-.city-navbar{
-    background-color: rgb(37, 98, 155) !important;
-  /*   display: flex !important;
-    justify-content: center !important;  */
-    
+
+:root{
+  --nav-color:#96ceb4;
+  --pale-color: #ffeead;
+  --orange: #ffcc5c;
+  --lightpink: #ff6f69;
 }
 
-.slide {
-  height: auto !important;
-  width:90% !important;
-  margin: auto;
-  margin-top: 10%;
-  margin-bottom: 15%;
+
+body{
+  background-image: url(./assets/backgroung-img.jpg);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  position: relative;
   
+}
+
+/* NAVBAR */
+.custom-navbar{
+  display: flex;
+  background-color: var(--nav-color) !important;
+  height: 70px;
+  margin-bottom: 170px;
+}
+
+/* Slides */
+.custom-slide{
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.individual-slide{
+  border-radius: 10px;
+}
+
+.control-icon{
+  margin-bottom: 70px !important;
+}
+
+/* CARDS Cities*/
+
+.group-card{
+  display: flex;
+  margin: auto;
+  gap: 10px;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
 }
+.custom-card{
+   margin-top: 50px;
+   margin-bottom: 50px;
+  justify-content: space-between;
+
+  
+}
+.img{
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  width: 700px;
+  height: 350px;
+}
+
+
+/* Footer */
+.custom-footer {
+  bottom:0;
+  background-color: var(--nav-color) !important;
+  width: 100% !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  height: 135px !important;
+}
+.link-footer {
+  display: flex;
+  color: black;
+  font-size: 25px;
+  width: 20% !important;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+  margin: auto;
+  text-decoration: none;
+  margin-top: -35px;
+}
+
+.link-footer-home{
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+.link-footer-city{
+  text-decoration: none;
+  color: rgb(53, 53, 53);
+}
+.link-footer-home:hover{
+  text-decoration: none;
+  color: white;
+}
+.link-footer-city:hover{
+  text-decoration: none;
+  color:white;
+}
+
+.div-icons {
+  margin: auto;
+  width: 20%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  gap: 15px;
+}
+.custom-icons {
+  color: black;
+  font-size: 25px;
+}
+
+.custom-icons:hover {
+  color: white;
+  font-size: 25px;
+}
+
+

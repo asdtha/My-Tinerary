@@ -3,6 +3,7 @@ import Cities from './components/Cities'
 import Navbar from './components/Navbar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import './App.css'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
 {/*       <Route path="/users" element={<User />} />
  */}
     </Routes>
+    <Footer />
     </BrowserRouter>
      
   );
