@@ -72,11 +72,11 @@ const SignIn = () => {
               <button type="submit">Sign In</button>
              {formSent && <p className="exito">Form sent succesfully</p>}
 
-              <div className="change-form-message">
+             
                 <Linkrouter to="/signup">
-                  <p>Don't have an account yet? Sign Up here</p>
+                  <p className="change-form-message">Don't have an account yet? Sign Up here</p>
                 </Linkrouter>
-              </div>
+            
             </Form>
           </div>
         )}

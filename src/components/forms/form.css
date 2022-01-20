@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+:root{
+  --nav-color:#96ceb4;
+  --pale-color: #ffeead;
+  --orange: #ffcc5c;
+  --lightpink: #ff6f69;
+}
+
+
 * {
 	padding: 0px;
 	margin: 0;
@@ -18,11 +27,12 @@ body {
 
 .formulario {
 	min-width: 500px;
-	margin-top: 50px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 	background: #fff;
 	border-radius: 5px;
 	padding: 20px;
-	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	box-shadow: 0 0 15px 0 rgba(92, 82, 82, 0.5);
 }
 
 .formulario > div {
@@ -32,9 +42,11 @@ body {
 .formulario label {
 	display: block;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 15px;
 	margin-bottom: 5px;
-	color: #1f1f1f;
+	color: #3d3d3d;
+	letter-spacing: 0.5;
+	
 }
 
 .formulario input,
@@ -84,9 +96,35 @@ body {
 	text-align: center;
 	font-size: 14px;
 	padding-top: 20px;
-	color: #02a802;
+	color: #20a520;
 }
 
-.formulario input[type="radio"] {
-	width: auto;
+.change-form-message {
+	text-decoration: none;
+	color: black;
+	color: rgb(68, 68, 68);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 4px;
+
+}
+
+
+.signup-form-message a{
+	text-decoration: none;
+	color: rgb(68, 68, 68);
+	cursor: pointer;
+	display: flex;
+	justify-content: center; 
+ 	margin-top: 10px;
+    margin-bottom: -15px;
+}
+
+::placeholder{
+	color: rgb(51, 49, 49);
+	font-size: 1rem;
+	letter-spacing: 0.1;
+	opacity: 0.3;
 }
