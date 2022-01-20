@@ -13,7 +13,7 @@
 
 /* NAVBAR */
 .custom-navbar {
-  display: flex;
+
   background-color: var(--nav-color) !important;
   height: 90px !important;
   color: var(--lightpink) !important;
@@ -27,7 +27,6 @@
 
 .custom-navbar-links{
   font-weight: normal;
-  display: flex;
   margin: auto;
 }
 .custom-navbar-links:hover{
