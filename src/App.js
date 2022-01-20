@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import './App.css'
 import Footer from './components/Footer'
+import Users from './components/Users'
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
    
       <Route path="/" element={<Home />} />
       <Route path="/cities" element={<Cities />} />
-{/*       <Route path="/users" element={<User />} />
- */}
+      <Route path="/user" element={<Users />} />
+
     </Routes>
     <Footer />
     </BrowserRouter>
