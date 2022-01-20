@@ -26,6 +26,8 @@ const SignIn = () => {
 
           return errors;
         }}
+
+        /* Function to send the form */
         onSubmit={(valores, {resetForm}) => {
           resetForm();
           console.log(valores);
@@ -34,6 +36,8 @@ const SignIn = () => {
           setTimeout(() => sentFormSent(false), 4000);
         }}
       >
+
+        {/* Render prop */}
          {({ errors }) => (
           <div className="contenedor">
             <Form className="formulario" >
