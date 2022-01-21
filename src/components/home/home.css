@@ -1,0 +1,13 @@
+
+/* Home message */
+.home-messaje{
+    color: var(--lightpink);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-top: 4rem;
+    margin-left: -5rem;
+    text-align: right;
+    width: 100%;
+  
+  }
+  

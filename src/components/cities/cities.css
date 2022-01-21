@@ -1,0 +1,36 @@
+/* Group card cities */
+.group-card{
+    display: flex;
+    margin: auto;
+    gap: 6px;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  
+  }
+  .custom-card{
+    background-color: var(--bg-card) !important;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     justify-content: space-between;
+     width: 300px !important;
+     border-radius: 7px !important;
+     overflow: hidden;
+     cursor: pointer;
+  }
+  .custom-card:hover{
+    background-color: var(--bg-card) !important;
+     margin-top: 50px;
+     margin-bottom: 50px;
+     justify-content: space-between;
+     width: 300px !important;
+     border-radius: 7px !important;
+     box-shadow: 0 0 15px 0 rgba(92, 82, 82, 0.5) !important;
+     cursor: pointer;
+  }
+  
+  .custom-card-img{
+    border-radius: 7px 7px 0 0;
+  }

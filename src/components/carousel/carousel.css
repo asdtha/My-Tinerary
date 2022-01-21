@@ -1,0 +1,47 @@
+
+.div-carousel{
+    display: flex;
+    gap: 30px;
+    margin-left: 100px;
+    margin: auto;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+    width: 100%;
+    box-shadow: 0 0 15px 0 rgba(92, 82, 82, 0.5) !important;
+  
+  }
+  
+  
+  .img{
+    display: flex;
+    gap: 30px;
+    margin-left: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 25rem;
+    height: 20rem;
+    cursor: pointer;
+   
+  
+  }
+  .img:hover{
+    display: flex;
+    gap: 30px;
+    margin-left: 200px;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    width: 25rem;
+    height: 20rem;
+    cursor: pointer;
+    box-shadow: 0 0 15px 0 rgba(92, 82, 82, 0.5) !important;
+  }

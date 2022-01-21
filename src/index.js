@@ -8,6 +8,8 @@ import '../src/components/footer/footer.css'
 import '../src/components/cities/cities.css'
 import '../src/components/carousel/carousel.css'
 import '../src/components/navbar/navbar.css'
+import '../src/components/home/home.css'
+
 
 
 ReactDOM.render(

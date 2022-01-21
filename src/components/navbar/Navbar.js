@@ -40,10 +40,25 @@ function Navbar() {
             <Linkrouter className="nav-link custom-navbar-links" to="/signin">
               Sign In
             </Linkrouter>
-            <Linkrouter className="nav-link custom-navbar-links" to="/signin">
+          {/*   <Linkrouter className="nav-link custom-navbar-links" to="/signin">
             <i class="large material-icons">account_circle</i>
-            </Linkrouter>
+            </Linkrouter> */}
            
+   <div class="dropdown">
+  <a class="btn " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  <i class=" material-icons">account_circle</i>
+  </a>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><Linkrouter class="dropdown-item" to="/signin">Sign In </Linkrouter></li>
+    <li><Linkrouter class="dropdown-item" to="/signup">Sign Up </Linkrouter></li>
+  </ul>
+</div>
+
+
+
+
+
+
             </ul>
           </div>
         </div>

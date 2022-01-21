@@ -34,7 +34,7 @@ body{
 }  */
 
 /* Home message */
-.home-messaje{
+/* .home-messaje{
   color: var(--lightpink);
   font-weight: bold;
   font-size: 3rem;
@@ -43,10 +43,10 @@ body{
   text-align: right;
   width: 100%;
 
-}
+} */
 
 /* Slides */
-
+/* 
 .div-carousel{
   display: flex;
   gap: 30px;
@@ -92,14 +92,14 @@ body{
   height: 20rem;
   cursor: pointer;
   box-shadow: 0 0 15px 0 rgba(92, 82, 82, 0.5) !important;
-}
+} */
 
 /* .control-icon{
   margin-bottom: 70px !important;
 } */
 
 /* CARDS Cities*/
-
+/* 
 .group-card{
   display: flex;
   margin: auto;
@@ -134,12 +134,12 @@ body{
 
 .custom-card-img{
   border-radius: 7px 7px 0 0;
-}
+} */
 
 
 
 /* Footer */
-.custom-footer {
+/* .custom-footer {
   bottom:0;
   background-color: var(--nav-color) !important;
   width: 100% !important;
@@ -148,13 +148,13 @@ body{
   flex-direction: column;
   align-content: center;
   text-align: center;
- 
   height: 135px !important;
+
 }
 .link-footer {
   display: flex;
-  color: black;
-  font-size: 25px;
+  color: #0000008C;
+  font-size: 20px;
   width: 20% !important;
   flex-direction: row;
   justify-content: center;
@@ -166,11 +166,11 @@ body{
 
 .link-footer-home{
   text-decoration: none;
-  color: rgb(53, 53, 53);
+  color: #0000008C;
 }
 .link-footer-city{
   text-decoration: none;
-  color: rgb(53, 53, 53);
+  color: #0000008C;
 }
 .link-footer-home:hover{
   text-decoration: none;
@@ -200,5 +200,5 @@ body{
   color: white;
   font-size: 25px;
 }
-
+ */
 

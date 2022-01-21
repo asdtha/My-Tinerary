@@ -13,21 +13,22 @@
 
 /* NAVBAR */
 .custom-navbar {
-
   background-color: var(--nav-color) !important;
-  height: 90px !important;
+  height: 80px !important;
   color: var(--lightpink) !important;
   font-size: 20px;
   width: 100% !important;
   gap: 15px;
   margin: auto;
   text-decoration: none;
+ 
   
 }
 
 .custom-navbar-links{
   font-weight: normal;
   margin: auto;
+  
 }
 .custom-navbar-links:hover{
   color: aliceblue !important;
