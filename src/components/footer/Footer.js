@@ -30,7 +30,7 @@ const Footer = () => {
             <FaWhatsapp />
             </a>
           </div>
-          <div className="flex items-center justify-evenly">
+          <div className="flex items-center ">
             <p className="text-center">
               &copy; {year} MyTinerary Inc. All rights reserved.
             </p>
