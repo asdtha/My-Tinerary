@@ -21,15 +21,14 @@ const SignUp = () => {
           if (!values.name) {
             errors.name = "Please insert your name";
           } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.name)) {
-            errors.email = "The name can only contain letters and spaces";
+            errors.name = "The name can only contain letters and spaces";
           }
 
           //Last Name validation
           if (!values.lastname) {
             errors.lastname = "Please insert your last name";
           } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.lastname)) {
-            errors.lastname =
-              "The last name can only contain letters and spaces";
+            errors.lastname = "The last name can only contain letters and spaces";
           }
 
           // Email validation
@@ -64,9 +63,9 @@ const SignUp = () => {
                 <label htmlFor="name">Name</label>
                 <Field
                   type="text"
-                  id="name"
                   name="name"
                   placeholder="Insert your name"
+                  id="name"
                 />
                 <ErrorMessage
                   name="name"
@@ -80,7 +79,7 @@ const SignUp = () => {
                 <Field
                   type="text"
                   name="lastname"
-                  placeholder="Insert your email"
+                  placeholder="Insert your Last Name"
                   id="lastname"
                 />
                 <ErrorMessage
@@ -122,11 +121,11 @@ const SignUp = () => {
                 />
               </div>
 
-              <button type="submit">Sign In</button>
+              <button type="submit">Sign Up</button>
               {formSent && <p className="exito">Form sent succesfully</p>}
               <div className="signup-form-message">
                 <Linkrouter to="/signin">
-                  <p className="signup-form-message">Already have an account? Sign In here</p>
+                  <p className="signup-form-message">Already have an account? Sign In</p>
                 </Linkrouter>
               </div>
             </Form>
