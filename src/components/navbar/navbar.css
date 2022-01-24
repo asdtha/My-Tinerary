@@ -26,6 +26,15 @@
   width: 125% !important;
  
 }
+.nav-icon:hover{
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  margin-left: 0.5rem;
+  height: 75px;
+  width: 115% !important;
+ 
+}
+
 
 /* HOME AND CITIES LINKS */
 
@@ -46,7 +55,6 @@
 /* USER ICON */
 
 .div-dropdown{
-position: relative;
 }
 
 .user-icon{
@@ -58,19 +66,41 @@ position: relative;
   color: aliceblue !important;
   font-size: 3.5rem;
 } 
+.dropdown-menu[data-bs-popper] {
+  top: 100%;
+  left: -45px;
+  margin-top: 0.5rem;
+  min-width: 8rem;
+  opacity: 0.9 !important;
+  font-weight: bolder !important;
+}
 
 .ul-dropdown{
-position: relative;
-top: 3rem;
-right: 5rem !important;
-margin-right: 10rem!important;
+
  
 }
 
 .signin{
- 
+  color: rgb(44, 44, 44);
+  font-weight: normal !important;
 }
 
 .signup{
+  color: rgb(44, 44, 44);
+  font-weight: normal;
+}
 
+
+@media screen and (max-width: 844) {
+  .custom-container-navbar {
+    text-align: right !important;
+    display: inline-block !important;
+    background-color: var(--nav-color) !important;
+    height: 100px !important;
+    color: var(--lightpink) !important;
+    font-size: 20px;
+    width: 100% !important;
+    text-decoration: none;
+   
+  }
 }
