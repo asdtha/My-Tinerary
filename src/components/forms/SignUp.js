@@ -28,15 +28,20 @@ const SignUp = () => {
           if (!values.lastname) {
             errors.lastname = "Please insert your last name";
           } else if (!/^[a-zA-ZÀ-ÿ\s]{1,40}$/.test(values.lastname)) {
-            errors.lastname = "The last name can only contain letters and spaces";
+            errors.lastname =
+              "The last name can only contain letters and spaces";
           }
 
           // Email validation
           if (!values.email) {
             errors.email = "Please insert your email";
           } else if (
-            !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(values.email)) {
-            errors.email = "The email can only contain letters, numbers, dots, hyphens and underscores";
+            !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+              values.email
+            )
+          ) {
+            errors.email =
+              "The email can only contain letters, numbers, dots, hyphens and underscores";
           }
           //Password validation
           if (!values.password) {
@@ -125,7 +130,9 @@ const SignUp = () => {
               {formSent && <p className="exito">Form sent succesfully</p>}
               <div className="signup-form-message">
                 <Linkrouter to="/signin">
-                  <p className="signup-form-message">Already have an account? Sign In</p>
+                  <p className="signup-form-message">
+                    Already have an account? Sign In
+                  </p>
                 </Linkrouter>
               </div>
             </Form>

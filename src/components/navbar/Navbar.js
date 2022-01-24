@@ -52,35 +52,34 @@ function Navbar() {
               </a>
             </li>
           </ul>
-         
-            <div className="dropdown div-dropdown  ">
-              <a
-                className="btn navbar-text"
-                type="button"
-                id="dropdownMenuButton1"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i className=" material-icons user-icon">account_circle</i>
-              </a>
-              <ul
-                className="dropdown-menu ul-dropdown "
-                aria-labelledby="dropdownMenuButton1"
-              >
-                <li>
-                  {" "}
-                  <Linkrouter className="dropdown-item signin" to="/signin">
-                    Sign In{" "}
-                  </Linkrouter>
-                </li>
-                <li>
-                  {" "}
-                  <Linkrouter className="dropdown-item signup" to="/signup">
-                    Sign Up{" "}
-                  </Linkrouter>
-                </li>
-              </ul>
-              
+
+          <div className="dropdown div-dropdown  ">
+            <a
+              className="btn navbar-text"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i className=" material-icons user-icon">account_circle</i>
+            </a>
+            <ul
+              className="dropdown-menu ul-dropdown "
+              aria-labelledby="dropdownMenuButton1"
+            >
+              <li>
+                {" "}
+                <Linkrouter className="dropdown-item signin" to="/signin">
+                  Sign In{" "}
+                </Linkrouter>
+              </li>
+              <li>
+                {" "}
+                <Linkrouter className="dropdown-item signup" to="/signup">
+                  Sign Up{" "}
+                </Linkrouter>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

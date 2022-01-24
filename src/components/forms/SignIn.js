@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Link as Linkrouter } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
@@ -13,22 +13,26 @@ const SignIn = () => {
         }}
         validate={(valores) => {
           let errors = {};
-    // Email validation
+          // Email validation
           if (!valores.email) {
             errors.email = "Please insert your email";
-          } else if (!/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(valores.email)){
-            errors.email = "The email can only contain letters, numbers, dots, hyphens and underscores"
+          } else if (
+            !/^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(
+              valores.email
+            )
+          ) {
+            errors.email =
+              "The email can only contain letters, numbers, dots, hyphens and underscores";
           }
           //Password validation
           if (!valores.password) {
             errors.password = "Please insert your password";
-          } 
+          }
 
           return errors;
         }}
-
         /* Function to send the form */
-        onSubmit={(valores, {resetForm}) => {
+        onSubmit={(valores, { resetForm }) => {
           resetForm();
           console.log(valores);
           console.log("Form sent");
@@ -36,23 +40,22 @@ const SignIn = () => {
           setTimeout(() => sentFormSent(false), 4000);
         }}
       >
-
         {/* Render prop */}
-         {({ errors }) => (
+        {({ errors }) => (
           <div className="contenedor">
-            <Form className="formulario" >
+            <Form className="formulario">
               <div>
                 <label htmlFor="email">Email</label>
                 <Field
                   type="email"
                   name="email"
                   placeholder="Insert your email"
-                  id="email"           
+                  id="email"
                 />
-                <ErrorMessage name="email" component={() => (
-                  <div className="error">{errors.email}</div>
-                )} />
-               
+                <ErrorMessage
+                  name="email"
+                  component={() => <div className="error">{errors.email}</div>}
+                />
               </div>
               <div>
                 <label htmlFor="password">Password</label>
@@ -61,26 +64,29 @@ const SignIn = () => {
                   name="password"
                   placeholder="Insert your password"
                   id="password"
-      
                 />
-                <ErrorMessage name="email" component={() => (
-                 <div className="error">{errors.password}</div>
-                )} />
-             
+                <ErrorMessage
+                  name="email"
+                  component={() => (
+                    <div className="error">{errors.password}</div>
+                  )}
+                />
               </div>
 
               <button type="submit">Sign In</button>
-             {formSent && <p className="exito">Form sent succesfully</p>}
+              {formSent && <p className="exito">Form sent succesfully</p>}
 
-             <div className="signin-form-message">
+              <div className="signin-form-message">
                 <Linkrouter to="/signup">
-                  <p className="signin-form-message">Don't have an account yet? Sign Up</p>
+                  <p className="signin-form-message">
+                    Don't have an account yet? Sign Up
+                  </p>
                 </Linkrouter>
-                </div>
+              </div>
             </Form>
           </div>
         )}
-       {/*  {({ values, errors, touched, handleSubmit, handleChange, handleBlur }) => (
+        {/*  {({ values, errors, touched, handleSubmit, handleChange, handleBlur }) => (
           <div className="contenedor">
             <Form className="formulario" onSubmit={handleSubmit}>
               <div>
