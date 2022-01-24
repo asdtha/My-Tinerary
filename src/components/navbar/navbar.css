@@ -5,25 +5,30 @@
   --orange: #ffcc5c;
   --lightpink: #ff6f69;
 }
-* {
-  padding: 0px;
-  margin: 0;
-  box-sizing: border-box;
-}
+
 
 /* NAVBAR */
-.custom-navbar {
+.custom-container-navbar {
   background-color: var(--nav-color) !important;
-  height: 80px !important;
+  height: 100px !important;
   color: var(--lightpink) !important;
   font-size: 20px;
   width: 100% !important;
-  gap: 15px;
-  margin: auto;
   text-decoration: none;
  
-  
 }
+
+/* LOGO */
+.nav-icon{
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  height: 85px;
+  width: 125% !important;
+ 
+}
+
+/* HOME AND CITIES LINKS */
+
 
 .custom-navbar-links{
   font-weight: normal;
@@ -35,4 +40,37 @@
   font-weight: normal !important;
   display: flex !important;
   margin: auto !important;
+}
+
+
+/* USER ICON */
+
+.div-dropdown{
+position: relative;
+}
+
+.user-icon{
+  font-size: 3.5rem;
+  
+}
+
+.user-icon:hover{
+  color: aliceblue !important;
+  font-size: 3.5rem;
+} 
+
+.ul-dropdown{
+position: relative;
+top: 3rem;
+right: 5rem !important;
+margin-right: 10rem!important;
+ 
+}
+
+.signin{
+ 
+}
+
+.signup{
+
 }
