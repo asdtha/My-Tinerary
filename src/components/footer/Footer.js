@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link as Linkrouter } from "react-router-dom";
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
@@ -11,13 +11,13 @@ const Footer = () => {
       <div className="flex justify-center items-center bg-purple-600 py-5 custom-footer">
         <div className="flex flex-col custom-footer">
           <div className="flex justify-evenly items-center text-2xl font-bold link-footer">
-            <Link to="/" className="hover:text-purple-300 link-footer-home">
+            <Linkrouter to="/" className="hover:text-purple-300 link-footer-home">
               Home
-            </Link>
+            </Linkrouter>
             
-            <Link to="/cities" className="hover:text-purple-300 link-footer-city">
+            <Linkrouter to="/cities" className="hover:text-purple-300 link-footer-city">
               Cities
-            </Link>
+            </Linkrouter>
           </div>
           <div className="flex items-center justify-evenly text-2xl py-10 div-icons">
             <a href="https://www.facebook.com/" rel="noreferrer" target="_blank" className="hover:text-purple-300 custom-icons">
