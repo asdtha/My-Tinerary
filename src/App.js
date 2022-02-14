@@ -7,9 +7,15 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import SignIn from "./components/forms/SignIn";
 import SignUp from "./components/forms/SignUp";
+import axios from "axios";
 
 
 function App() {
+  axios.get("https://restcountries.com/v3.1/all")
+  .then(response =>{
+  var busquedaContinente=response.data.filter(continents=>continents.continents.includes("North America") )
+  console.log(busquedaContinente)    
+  })
   return (
     <BrowserRouter>
       <Navbar />
