@@ -6,7 +6,6 @@
   --lightpink: #ff6f69;
 }
 
-
 /* NAVBAR */
 .custom-container-navbar {
   background-color: var(--nav-color) !important;
@@ -15,54 +14,43 @@
   font-size: 20px;
   width: 100% !important;
   text-decoration: none;
- 
 }
 
 /* LOGO */
-.nav-icon{
+.nav-icon {
   filter: brightness(1.1);
   mix-blend-mode: multiply;
   height: 85px;
   width: 125% !important;
- 
 }
-.nav-icon:hover{
+.nav-icon:hover {
   filter: brightness(1.1);
   mix-blend-mode: multiply;
   margin-left: 0.2rem;
   height: 80px;
   width: 120% !important;
- 
 }
-
 
 /* HOME AND CITIES LINKS */
 
-
-.custom-navbar-links{
+.custom-navbar-links {
   font-weight: normal;
-  
-  
 }
-.custom-navbar-links:hover{
+.custom-navbar-links:hover {
   color: aliceblue !important;
   font-weight: normal !important;
-  
 }
-
 
 /* USER ICON */
 
-
-.user-icon{
+.user-icon {
   font-size: 3.5rem;
-  
 }
 
-.user-icon:hover{
+.user-icon:hover {
   color: aliceblue !important;
   font-size: 3.5rem;
-} 
+}
 .dropdown-menu[data-bs-popper] {
   background-color: rgb(255, 255, 255);
   top: 100%;
@@ -73,15 +61,12 @@
   font-weight: bolder !important;
 }
 
-
-
-.signin{
+.signin {
   color: rgb(90, 90, 90);
   font-weight: bold;
 }
 
-.signup{
+.signup {
   color: rgb(90, 90, 90);
   font-weight: bold;
 }
-
