@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-const citiesSchemas = new mongoose.Schema({
+const citiesSchema = new mongoose.Schema({
 
     name: {type:String, required:true},
     country:{type:String, required:true},
@@ -8,7 +8,7 @@ const citiesSchemas = new mongoose.Schema({
     language:{type:String, required:true},
     demonym:{type:String, required:true},
     population:{type:String, required:true},
-    coordinates:{type:String, required:true},
+    coordinates:{type:Number, required:true},
     googlemaps:{type:String, required:true},
     continent:{type:String, required:true},
     region:{type:String, required:true},
@@ -17,6 +17,6 @@ const citiesSchemas = new mongoose.Schema({
 
 }) 
 
-const Cities = mongoose.model("cities", Cities.Schema)
+const City = mongoose.model("cities", citiesSchema)
 
-module.exports = Cities;
+module.exports = City;

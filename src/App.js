@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./components/home/Home";
@@ -11,11 +11,18 @@ import axios from "axios";
 
 
 function App() {
-  axios.get("https://restcountries.com/v3.1/all")
+ /*  axios.get("https://restcountries.com/v3.1/all")
   .then(response =>{
   var busquedaContinente=response.data.filter(continents=>continents.continents.includes("North America") )
   console.log(busquedaContinente)    
-  })
+  }) */
+  async function test(){
+      await axios.get("http://localhost:4000/api/datos")
+      .then(response => console.log(response))
+  }
+  useEffect(()=>{
+       test()
+  });
   return (
     <BrowserRouter>
       <Navbar />

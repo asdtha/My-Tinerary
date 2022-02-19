@@ -1,7 +1,9 @@
-const Cities = require("../model/cities")
+const Cities = require("../models/cities.js")
 
 const citiesController = {
-    getCities: async(req, res )=> {
+    getDatos: async(req, res)=> {
+        console.log(req)
+        console.log(response)
         let cities;
         let error = null;
         try{
@@ -10,7 +12,11 @@ const citiesController = {
             error = err
             console.error(error)
         }
-        res.json(...cities) 
+        res.json({
+            response:error?"ERROR":{cities},
+            success:error?false:true,
+            error:error
+         }) 
     }
 }
 
