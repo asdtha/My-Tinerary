@@ -9,13 +9,14 @@ import '../src/components/cities/cities.css'
 import '../src/components/carousel/carousel.css'
 import '../src/components/navbar/navbar.css'
 import '../src/components/home/home.css'
-
+import { StateProvider } from './StateProvider';
+import reducer, { initialState } from './reducer'
 
 
 ReactDOM.render(
-  <React.StrictMode>
+  <StateProvider initialState={initialState} reducer={reducer}>
     <App />
-  </React.StrictMode>,
+  </StateProvider>,
   document.getElementById('root')
 );
 

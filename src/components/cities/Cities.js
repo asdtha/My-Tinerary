@@ -1,7 +1,14 @@
 import React from "react";
 import PicoBolivar from "../../assets/picobolivar.jpg";
+import {useStateValue} from '../../StateProvider';
 
-function CityCard() {
+function CityCard(data) {
+
+  const [{cities}] = useStateValue();
+
+  let dataCities = data.data
+  console.log(dataCities)
+  
   return (
     <div>
       <div className="group-card">

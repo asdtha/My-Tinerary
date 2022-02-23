@@ -2,8 +2,6 @@ const Cities = require("../models/cities.js")
 
 const citiesController = {
     getDatos: async(req, res)=> {
-        console.log(req)
-        console.log(response)
         let cities;
         let error = null;
         try{

@@ -8,7 +8,9 @@ import Footer from "./components/footer/Footer";
 import SignIn from "./components/forms/SignIn";
 import SignUp from "./components/forms/SignUp";
 import axios from "axios";
-
+import {actionTypes} from './reducer';
+import { data } from 'jquery';
+import {useStateValue} from './StateProvider';
 
 function App() {
  /*  axios.get("https://restcountries.com/v3.1/all")
@@ -16,19 +18,25 @@ function App() {
   var busquedaContinente=response.data.filter(continents=>continents.continents.includes("North America") )
   console.log(busquedaContinente)    
   }) */
-  async function test(){
-      await axios.get("http://localhost:4000/api/datos")
-      .then(response => console.log(response))
-  }
+  
+  const [{cities}, dispatch] = useStateValue();
+
   useEffect(()=>{
-       test()
-  });
+
+  axios.get("http://localhost:4000/api/datos")
+      .then(response => 
+        dispatch({
+          type: actionTypes.CITIESDB,
+          cities: response.data.response.cities
+        }))
+  console.log(cities)
+ },[])
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/cities" element={<Cities />} />
+        <Route path="/cities" element={<Cities data={data}/>} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
